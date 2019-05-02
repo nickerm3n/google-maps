@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="floating-panel">
+		<b>Start: </b>
+		<select id="start">
+			<option value="kiev, ua">Kiev</option>
+			<option value="poltava, ua">Poltava</option>
+			<option value="dnipro, ua">Dnipro</option>
+			<option value="kharkiv, ua">Kharkiv</option>
+			<option value="donetsk, ua">Donetsk</option>
+			<option value="zhytomyr, ua">Zhytomyr</option>
+			<option value="lutsk, ua">Lutsk</option>
+			<option value="mykolaiv, ua">Mykolaiv</option>
+			<option value="odesa, ua">Odesa</option>
+			<option value="rivne, ua">Rivne</option>
+			<option value="ternopil, ua">Ternopil</option>
+			<option value="sumy, ua">Sumy</option>
+			<option value="chernihiv, ua">Chernihiv</option>
+		</select>
+		<b>End: </b>
+		<select id="end">
+			<option value="kiev, ua">Kiev</option>
+			<option value="poltava, ua">Poltava</option>
+			<option value="dnipro, ua">Dnipro</option>
+			<option value="kharkiv, ua">Kharkiv</option>
+			<option value="donetsk, ua">Donetsk</option>
+			<option value="zhytomyr, ua">Zhytomyr</option>
+			<option value="lutsk, ua">Lutsk</option>
+			<option value="mykolaiv, ua">Mykolaiv</option>
+			<option value="odesa, ua">Odesa</option>
+			<option value="rivne, ua">Rivne</option>
+			<option value="ternopil, ua">Ternopil</option>
+			<option value="sumy, ua">Sumy</option>
+			<option value="chernihiv, ua">Chernihiv</option>
+		</select>
+		<button type="button" class="get-dir">get directions</button>
+	</div>
+
+	<div id="map"></div>
+
+<!-- Scripts -->
+<script src="js/libs/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKokc58ugbv9Oo5tKJVaZlbhoiGqh1bwQ&callback=initMap">
+</script>
+
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
